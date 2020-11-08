@@ -210,7 +210,7 @@ số lượng,tên nhân viên, ngày của hóa đơn.
 
 2.2.13.	Màn hình chính:
 
- 
+
 -	Mô tả: Hiển thị tổng quát toàn bộ các chứng năng của phần mềm bao gồm:
 + Hiển thị 8 phòng hiện có của khách sạn: mỗi phòng hiển các thông tin như tên booking, tên khách, số khách, quốc tịch, ngày đến, ngày đi, tiền phòng, và tính năng thay đổi trạng thái phòng, 1 button chuyển đến trang chi tiết để điền thông tin hóa đơn, 1 nút check out khi khách trả phòng.
 + Bên tay trái màn hình hiển thị lịch tiện cho người sử dụng quan sát ngày tháng năm.
