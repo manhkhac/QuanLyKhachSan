@@ -7,6 +7,7 @@ CHƯƠNG 1: TỔNG QUAN VỀ PHẦN MỀM
 -	Xuất phát từ thực tế đó , nhóm chúng em đã chọn đề tài “Phần Mềm Quản Lý Khách Sạn HÀ NỘI ODYSSEY HOTEL”. Đây là một đề tài không còn mới song nó vẫn chưa hêt phổ biến trong quá trình quản lý khách sạn. Vì vậy, nhóm em nhiên cứu đề tài này hy vọng sẽ góp phần giúp công việc quản lý trở nên đơn giản hơn.
 
 CHƯƠNG 2: Phân tích thiết kế database
+
 2.1.	Tổng quan về database của phần mềm
 ![csdl](https://user-images.githubusercontent.com/41892269/98458776-b17e0780-21c6-11eb-92b7-0a95a9285105.png)
  
@@ -95,6 +96,8 @@ Khóa chính là: VatTuID
 
 
 2.2.2.	Màn hình đăng nhập
+
+https://github.com/manhkhac/QuanLyKhachSan/issues/2#issue-738407223
  
 -	Mô tả: Dùng để đăng nhập tài khoản trước khi vào màn hình chính. 
 
