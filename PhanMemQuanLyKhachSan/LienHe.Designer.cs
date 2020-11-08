@@ -37,17 +37,12 @@
             this.lblLHDottedLine = new System.Windows.Forms.Label();
             this.lblLienHe = new System.Windows.Forms.Label();
             this.lblNNTT = new System.Windows.Forms.Label();
-            this.lblLDP = new System.Windows.Forms.Label();
-            this.lblNHD = new System.Windows.Forms.Label();
-            this.lblDTTL = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTroVeCuaLienHe = new System.Windows.Forms.Button();
             this.lblWebsite = new System.Windows.Forms.Label();
             this.lblFacebook = new System.Windows.Forms.Label();
             this.lblDienThoai = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbPhanMemLH
@@ -156,42 +151,6 @@
             this.lblNNTT.Text = "1. Nguyễn Khắc Mạnh";
             this.lblNNTT.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblLDP
-            // 
-            this.lblLDP.AutoSize = true;
-            this.lblLDP.BackColor = System.Drawing.Color.Transparent;
-            this.lblLDP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLDP.Location = new System.Drawing.Point(14, 299);
-            this.lblLDP.Name = "lblLDP";
-            this.lblLDP.Size = new System.Drawing.Size(142, 27);
-            this.lblLDP.TabIndex = 9;
-            this.lblLDP.Text = "2. Đỗ Văn Lập";
-            this.lblLDP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblNHD
-            // 
-            this.lblNHD.AutoSize = true;
-            this.lblNHD.BackColor = System.Drawing.Color.Transparent;
-            this.lblNHD.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNHD.Location = new System.Drawing.Point(14, 338);
-            this.lblNHD.Name = "lblNHD";
-            this.lblNHD.Size = new System.Drawing.Size(201, 27);
-            this.lblNHD.TabIndex = 10;
-            this.lblNHD.Text = "3. Nguyễn Văn Khoa";
-            this.lblNHD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblDTTL
-            // 
-            this.lblDTTL.AutoSize = true;
-            this.lblDTTL.BackColor = System.Drawing.Color.Transparent;
-            this.lblDTTL.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDTTL.Location = new System.Drawing.Point(14, 376);
-            this.lblDTTL.Name = "lblDTTL";
-            this.lblDTTL.Size = new System.Drawing.Size(169, 27);
-            this.lblDTTL.TabIndex = 11;
-            this.lblDTTL.Text = "4. Phạm Bá Hùng";
-            this.lblDTTL.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
@@ -270,30 +229,6 @@
             this.lblEmail.Text = "itchat@gmail.com";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 417);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 27);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "5. Nguyễn Xuân Chiến";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 455);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 27);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "6. Vũ Minh Hiếu";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // frmLienHe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
@@ -301,17 +236,12 @@
             this.BackgroundImage = global::PhanMemQuanLyKhachSan.Properties.Resources.b1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(936, 512);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTroVeCuaLienHe);
             this.Controls.Add(this.lblWebsite);
             this.Controls.Add(this.lblFacebook);
             this.Controls.Add(this.lblDienThoai);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblDTTL);
-            this.Controls.Add(this.lblNHD);
-            this.Controls.Add(this.lblLDP);
             this.Controls.Add(this.lblNNTT);
             this.Controls.Add(this.lblLienHe);
             this.Controls.Add(this.lblLHDottedLine);
@@ -342,16 +272,11 @@
         private System.Windows.Forms.Label lblLHDottedLine;
         private System.Windows.Forms.Label lblLienHe;
         private System.Windows.Forms.Label lblNNTT;
-        private System.Windows.Forms.Label lblLDP;
-        private System.Windows.Forms.Label lblNHD;
-        private System.Windows.Forms.Label lblDTTL;
         private System.Windows.Forms.Label lblWebsite;
         private System.Windows.Forms.Label lblFacebook;
         private System.Windows.Forms.Label lblDienThoai;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Button btnTroVeCuaLienHe;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
