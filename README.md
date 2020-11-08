@@ -1,4 +1,5 @@
 CHƯƠNG 1: TỔNG QUAN VỀ PHẦN MỀM
+
 1.1.	Tên đề tài
 -	Phần mềm quản lý khách sạn “HÀ NỘI ODYSSEY HOTEL”.
 1.2.	Lý dó chọn đề tài
@@ -77,7 +78,8 @@ Khóa chính là: VatTuID
 
 2.2.4.	Màn hình cập nhật vật tư:
 
- 
+![capnhatvattu](https://user-images.githubusercontent.com/41892269/98459472-ab3f5980-21cd-11eb-9164-d497b42b53cf.png)
+
 -	Mô tả:
  + hiển thị toàn bộ vật tư đang có trong khách sạn như: tivi, tủ lạnh, máy lạnh, bài ủi.....
 + có các nút chức năng như: thêm vật tư, xóa vật tư, cập nhật lại vật tư dựa theo thao tác chọn dòng từ datagridview của người dùng. Mỗi thao tác sẽ được cập nhật lại xuống database. 
