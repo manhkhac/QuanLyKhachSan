@@ -1,21 +1,10 @@
 CHƯƠNG 1: TỔNG QUAN VỀ PHẦN MỀM
 1.1.	Tên đề tài
--	Phần mềm quản lý khách sạn “SÀI GÒN ODYSSEY HOTEL”.
+-	Phần mềm quản lý khách sạn “HÀ NỘI ODYSSEY HOTEL”.
 1.2.	Lý dó chọn đề tài
 -	Tại Việt Nam nhà nước đang tạo điều kiện thuận lợi cho việc phát triển ngành dịch vụ, kéo theo đó là ngành du lịch. Vì thế ngành kinh doanh khách sạn cũng đang được chú trọng để thu hút lượng khách du lịch tới Việt Nam, để phát huy thuận lời về vị trí địa lý cũng như là các danh lam thám cảnh tại đất nước chúng ta.
 -	Tuy nhiên trong thực tế thì, các khách sạn lớn mới có các phần mềm quản lý. Còn các khách sạn vừa và nhỏ thì hầu như công việc đều đang phải làm một cách thủ công, trong khi đó ở nước ta, các khách sạn lớn lại chưa thật sự nhiều, vì vậy cơ sở vật chất và nền kinh tế cũng đang còn phát triển.
--	Xuất phát từ thực tế đó , nhóm chúng em đã chọn đề tài “Phần Mềm Quản Lý Khách Sạn Sài Gòn ODYSSEY HOTEL”. Đây là một đề tài không còn mới song nó vẫn chưa hêt phổ biến trong quá trình quản lý khách sạn. Vì vậy, nhóm em nhiên cứu đề tài này hy vọng sẽ góp phần giúp công việc quản lý trở nên đơn giản hơn.
-
-
-
-
-
-
-
-
-
-
-
+-	Xuất phát từ thực tế đó , nhóm chúng em đã chọn đề tài “Phần Mềm Quản Lý Khách Sạn HÀ NỘI ODYSSEY HOTEL”. Đây là một đề tài không còn mới song nó vẫn chưa hêt phổ biến trong quá trình quản lý khách sạn. Vì vậy, nhóm em nhiên cứu đề tài này hy vọng sẽ góp phần giúp công việc quản lý trở nên đơn giản hơn.
 
 CHƯƠNG 2: Phân tích thiết kế database
 2.1.	Tổng quan về database của phần mềm
