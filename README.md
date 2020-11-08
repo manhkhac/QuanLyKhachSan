@@ -8,6 +8,7 @@ CHƯƠNG 1: TỔNG QUAN VỀ PHẦN MỀM
 
 CHƯƠNG 2: Phân tích thiết kế database
 2.1.	Tổng quan về database của phần mềm
+![csdl](https://user-images.githubusercontent.com/41892269/98458776-b17e0780-21c6-11eb-92b7-0a95a9285105.png)
  
 Database gồm các bảng sau:
 -	 Bảng hóa đơn gồm:
