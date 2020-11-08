@@ -1,10 +1,10 @@
-CH??NG 1: T?NG QUAN V? PH?N M?M
-1.1. T�n ?? t�i
-- Ph?n m?m qu?n l� kh�ch s?n �H� N?I ODYSSEY HOTEL�.
-1.2. L� d� ch?n ?? t�i
-- T?i Vi?t Nam nh� n??c ?ang t?o ?i?u ki?n thu?n l?i cho vi?c ph�t tri?n ng�nh d?ch v?, k�o theo ?� l� ng�nh du l?ch. V� th? ng�nh kinh doanh kh�ch s?n c?ng ?ang ???c ch� tr?ng ?? thu h�t l??ng kh�ch du l?ch t?i Vi?t Nam, ?? ph�t huy thu?n l?i v? v? tr� ??a l� c?ng nh? l� c�c danh lam th�m c?nh t?i ??t n??c ch�ng ta.
-- Tuy nhi�n trong th?c t? th�, c�c kh�ch s?n l?n m?i c� c�c ph?n m?m qu?n l�. C�n c�c kh�ch s?n v?a v� nh? th� h?u nh? c�ng vi?c ??u ?ang ph?i l�m m?t c�ch th? c�ng, trong khi ?� ? n??c ta, c�c kh�ch s?n l?n l?i ch?a th?t s? nhi?u, v� v?y c? s? v?t ch?t v� n?n kinh t? c?ng ?ang c�n ph�t tri?n.
-- Xu?t ph�t t? th?c t? ?� , nh�m ch�ng em ?� ch?n ?? t�i �Ph?n M?m Qu?n L� Kh�ch S?n S�i G�n ODYSSEY HOTEL�. ?�y l� m?t ?? t�i kh�ng c�n m?i song n� v?n ch?a h�t ph? bi?n trong qu� tr�nh qu?n l� kh�ch s?n. V� v?y, nh�m em nhi�n c?u ?? t�i n�y hy v?ng s? g�p ph?n gi�p c�ng vi?c qu?n l� tr? n�n ??n gi?n h?n.
+CHƯƠNG 1: TỔNG QUAN VỀ PHẦN MỀM
+1.1.	Tên đề tài
+-	Phần mềm quản lý khách sạn “SÀI GÒN ODYSSEY HOTEL”.
+1.2.	Lý dó chọn đề tài
+-	Tại Việt Nam nhà nước đang tạo điều kiện thuận lợi cho việc phát triển ngành dịch vụ, kéo theo đó là ngành du lịch. Vì thế ngành kinh doanh khách sạn cũng đang được chú trọng để thu hút lượng khách du lịch tới Việt Nam, để phát huy thuận lời về vị trí địa lý cũng như là các danh lam thám cảnh tại đất nước chúng ta.
+-	Tuy nhiên trong thực tế thì, các khách sạn lớn mới có các phần mềm quản lý. Còn các khách sạn vừa và nhỏ thì hầu như công việc đều đang phải làm một cách thủ công, trong khi đó ở nước ta, các khách sạn lớn lại chưa thật sự nhiều, vì vậy cơ sở vật chất và nền kinh tế cũng đang còn phát triển.
+-	Xuất phát từ thực tế đó , nhóm chúng em đã chọn đề tài “Phần Mềm Quản Lý Khách Sạn Sài Gòn ODYSSEY HOTEL”. Đây là một đề tài không còn mới song nó vẫn chưa hêt phổ biến trong quá trình quản lý khách sạn. Vì vậy, nhóm em nhiên cứu đề tài này hy vọng sẽ góp phần giúp công việc quản lý trở nên đơn giản hơn.
 
 
 
@@ -17,54 +17,64 @@ CH??NG 1: T?NG QUAN V? PH?N M?M
 
 
 
-CH??NG 2: Ph�n t�ch thi?t k? database
-2.1. T?ng quan v? database c?a ph?n m?m
+CHƯƠNG 2: Phân tích thiết kế database
+2.1.	Tổng quan về database của phần mềm
+ 
+Database gồm các bảng sau:
+-	 Bảng hóa đơn gồm:
+ 
+ Khóa chính là: HoaDonID
+Khóa phụ là:KhachHangID, NhanVienID, PhongID, 
 
-Database g?m c�c b?ng sau:
--  B?ng h�a ??n g?m:
 
- Kh�a ch�nh l�: HoaDonID
-Kh�a ph? l�:KhachHangID, NhanVienID, PhongID, 
+-	Bảng lịch làm việc:
+ 
+ Khóa chính là: LichLamViecID
+Khóa phụ là : NhanVienID
 
+-	Bảng khách hàng
+ 
+Khóa chính: KhachHangID
 
-- B?ng l?ch l�m vi?c:
+-	Bảng chi tiết hóa đơn
+ 
+Khóa chính: ChiTietHoaDonID
+Khóa phụ: DichVuID, HoaDonID
 
- Kh�a ch�nh l�: LichLamViecID
-Kh�a ph? l� : NhanVienID
+-	Bảng dịch vụ
+ 
+Khóa chính: DichVuID
 
-- B?ng kh�ch h�ng
+-	Bảng nhân viên:
+ 
+Khóa chính là: NhanVienID
 
-Kh�a ch�nh: KhachHangID
+-	Bảng mật khẩu:
+	 
+Khóa chính là: username
 
-- B?ng chi ti?t h�a ??n
+-	Bảng phòng:
+ 
+Khóa chính là : PhongID
+Khóa phụ: LoaiPhongID
 
-Kh�a ch�nh: ChiTietHoaDonID
-Kh�a ph?: DichVuID, HoaDonID
+-	Bảng loại phòng
+ 
+Khóa chính là: LoaiPhongID
 
-- B?ng d?ch v?
+-	Bảng vật tư
+ 
+Khóa chính là: VatTuID
 
-Kh�a ch�nh: DichVuID
 
-- B?ng nh�n vi�n:
 
-Kh�a ch�nh l�: NhanVienID
 
-- B?ng m?t kh?u:
-	
-Kh�a ch�nh l�: username
 
-- B?ng ph�ng:
 
-Kh�a ch�nh l� : PhongID
-Kh�a ph?: LoaiPhongID
 
-- B?ng lo?i ph�ng
 
-Kh�a ch�nh l�: LoaiPhongID
 
-- B?ng v?t t?
 
-Kh�a ch�nh l�: VatTuID
 
 
 
@@ -72,6 +82,9 @@ Kh�a ch�nh l�: VatTuID
 
 
 
+2.2.	Mô hình Class Diagram:
+ 
+2.2.1.	Mô hình UseCase 
 
 
 
@@ -82,9 +95,7 @@ Kh�a ch�nh l�: VatTuID
 
 
 
-2.2. M� h�nh Class Diagram:
 
-2.2.1. M� h�nh UseCase 
 
 
 
@@ -93,9 +104,15 @@ Kh�a ch�nh l�: VatTuID
 
 
 
+2.2.2.	Màn hình đăng nhập
+ 
+-	Mô tả: Dùng để đăng nhập tài khoản trước khi vào màn hình chính. 
 
+2.2.3.	Màn hình quản lý phòng:
 
 
+ 
+-	Mô tả: Hiển thị toàn bộ số phòng đang có trong khách sạn, bao gồm số phòng, loại phòng và giá phòng trên đó, người dùng không được thay đổi thông tin gì trên màn hình này. Góc trái màn hình có 3 nút là 3 chức năng: Cập nhật vật tư, cập nhật dịch vụ, cập nhật loại phòng.
 
 
 
@@ -104,19 +121,24 @@ Kh�a ch�nh l�: VatTuID
 
 
 
-2.2.2. M�n h�nh ??ng nh?p
-       
-- M� t?: D�ng ?? ??ng nh?p t�i kho?n tr??c khi v�o m�n h�nh ch�nh.
 
-2.2.3. M�n h�nh qu?n l� ph�ng:
 
 
 
-- M� t?: Hi?n th? to�n b? s? ph�ng ?ang c� trong kh�ch s?n, bao g?m s? ph�ng, lo?i ph�ng v� gi� ph�ng tr�n ?�, ng??i d�ng kh�ng ???c thay ??i th�ng tin g� tr�n m�n h�nh n�y. G�c tr�i m�n h�nh c� 3 n�t l� 3 ch?c n?ng: C?p nh?t v?t t?, c?p nh?t d?ch v?, c?p nh?t lo?i ph�ng.
+2.2.4.	Màn hình cập nhật vật tư:
 
+ 
+-	Mô tả:
+ + hiển thị toàn bộ vật tư đang có trong khách sạn như: tivi, tủ lạnh, máy lạnh, bài ủi.....
++ có các nút chức năng như: thêm vật tư, xóa vật tư, cập nhật lại vật tư dựa theo thao tác chọn dòng từ datagridview của người dùng. Mỗi thao tác sẽ được cập nhật lại xuống database. 
 
+2.2.5.	Màn hình cập nhật dịch vụ khách sạn:
 
+	 
 
+   - Mô tả: 
++ Hiển thị toàn bộ dịch vụ đang có trong khách sạn như: nước suối, massage, đi tour, đưa đón taxi đi sân bay, giặt ủi....
++ Có các nút chức năng như: thêm dịch vụ, xóa dịch vụ, cập nhật lại dịch vụ dựa theo thao tác chọn dòng từ datagridview của người dùng. Mỗi thao tác sẽ được cập nhật lại xuống database.
 
 
 
@@ -125,97 +147,72 @@ Kh�a ch�nh l�: VatTuID
 
 
 
-2.2.4. M�n h�nh c?p nh?t v?t t?:
 
 
-- M� t?:
- + hi?n th? to�n b? v?t t? ?ang c� trong kh�ch s?n nh?: tivi, t? l?nh, m�y l?nh, b�i ?i.....
-+ c� c�c n�t ch?c n?ng nh?: th�m v?t t?, x�a v?t t?, c?p nh?t l?i v?t t? d?a theo thao t�c ch?n d�ng t? datagridview c?a ng??i d�ng. M?i thao t�c s? ???c c?p nh?t l?i xu?ng database.
+2.2.6.	Màn hình cập nhập loại phòng:
+ 
+-	Mô tả:
++ Người dùng lựa chọn số phòng và cập nhật lại loại phòng theo 3 loại đã được set trong combobox: standard, deluxe, superior.
++ Nút lưu sẽ cập nhật lại loại phòng dựa theo số phòng người dùng đã chọn và lưu và database.
+      +  Nút hủy để hủy các lựa chọn từ combobox của khách hàng.
 
-2.2.5. M�n h�nh c?p nh?t d?ch v? kh�ch s?n:
 
-	
 
-   - M� t?: 
-+ Hi?n th? to�n b? d?ch v? ?ang c� trong kh�ch s?n nh?: n??c su?i, massage, ?i tour, ??a ?�n taxi ?i s�n bay, gi?t ?i....
-+ C� c�c n�t ch?c n?ng nh?: th�m d?ch v?, x�a d?ch v?, c?p nh?t l?i d?ch v? d?a theo thao t�c ch?n d�ng t? datagridview c?a ng??i d�ng. M?i thao t�c s? ???c c?p nh?t l?i xu?ng database.
 
 
 
 
+2.2.7.	Màn hình quản lý nhân viên:
+ 
+-	Mô tả:
++ Hiển thị toàn bộ lịch làm việc của nhân viên đang có trong khách sạn, bao gồm số thứ tự, tên nhân viên, ca trực, ngày làm  trên đó,người dùng không được thay đổi thông tin gì trên màn hình này. Góc trái màn hình có 2 nút là 2 chức năng: Cập nhật thông tin nhân viên, cập nhật lịch làm việc và hiển thị lịch để tiện cho việc quan sát ngày tháng.
 
 
+2.2.8.	Màn hình cập nhật thông tin nhân viên:
+ 
+- Mô tả:
++ Hiển thị thông tin toàn bộ nhân viên làm việc trong khách sạn bao gồm: số thứ tự và tên nhân viên.
++ Các nút với các chức năng như thêm nhân viên, xóa nhân viên, cập nhật lại thông tin nhân viên, tìm kiếm theo tên nhân viên, hủy tìm kiếm.
++ Người dùng chọn dòng trên datagridview và click vào các nút để thao tác, mỗi dòng người dùng click trên picturebox hiển thị hình theo từng nhân viên, nếu nhân viên không có hình hệ thống sẽ lấy hình mặc định.
+2.2.9.	Màn hình cập nhật lịch làm việc:
 
+ 
 
+-	Mô tả:
++ Hiển thị toàn bộ lịch làm việc của nhân viên trên datagirdview đông thời có thêm các chức năng: thêm lịch làm việc, xóa lịch làm việc, cập nhật lại lịch làm việc.
++ Người dùng sẽ chọn từ 3 combobox bên tay phải màn hình để thêm lịch làm việc cho nhân viên
++ Nhân viên chưa được thêm vào co sở dữ liệu sẽ không được thêm lịch làm việc.
++ Nút xem lại lịch làm việc được hiển thị trên góc trái trên của màn hình để người dùng có thể xem lại ngày làm việc của nhân viên theo lựa chọn trên datetime picker. 
+2.2.10.	Màn hình quản lý khách hàng:
 
+ 
+-	Mô tả:
++ Hiển thị toàn bộ khách hàng đã check in tại khách sạn khi đã có hóa đơn thanh toán.
++ Bao gồm các nút chức năng như: tìm kiếm khách hàng theo tên khách hàng, lọc ra các khách hàng từ ngày nào đến ngày nào.
++ Người dùng không có quyền xóa hay thêm hay cập nhật gì từ màn hình này, người dùng muốn thêm khách hàng thì chỉ được thêm khi đã có hóa đơn từ màn hình chi tiết hóa đơn.
+2.2.11.	Màn hình liên hệ:
+ 
+-	Mô tả:
++ Hiển thị thông tin của nhà sáng lập ra phần mềm, địa chỉ, email. website liên hệ, số điện thoại, năm phát hành.
 
-2.2.6. M�n h�nh c?p nh?p lo?i ph�ng:
+2.2.12.	Màn hình chi tiết phiếu phòng:
+ 
+-	Mô tả:
++ Hiển thị các thông tin về hóa đơn của khách hàng như: loại phòng, tên booking, số khách, ngày vào,
+giá phòng, số đêm, số phòng, tên khách, quốc tịch, ngày đi, thành tiền, tên dịch vụ, giá dịch vụ
+số lượng,tên nhân viên, ngày của hóa đơn.
++ Bao gồm các nút với các chức năng như: thêm dịch vụ, xóa dịch vụ, lưu khi có sửa đổi, in, và xem lại hóa đơn theo ngày đến trên datetime picker.
++ Sau khi người dùng nhấn nút lưu thông tin sẽ được lưu vào bảng khách hàng, hóa đơn, chi tiết hóa đơn theo từng table trong cơ sở dữ liệu, đồng thời sẽ chuyển về màn hình chính và hiển thị lên các label của phòng đó thông tin đã được điền vào và trạng thái phòng sẽ thay đổi từ trống sang có khách.
++ Khi người dùng nhấn nút thêm, tên dịch vụ được chọn từ combobox và số lượng được điền từ textbox sẽ được insert xuống datagridview chi tiết dịch vụ bên dưới.
++ Khi người dùng nhấn chọn dòng trên datagridview và nhấn nút xóa, thì dòng dl đó sẽ được xóa đi trên datagridview đó.
++ Tên dịch vụ sẽ được load từ database đổ và combobox.
 
-- M� t?:
-+ Ng??i d�ng l?a ch?n s? ph�ng v� c?p nh?t l?i lo?i ph�ng theo 3 lo?i ?� ???c set trong combobox: standard, deluxe, superior.
-+ N�t l?u s? c?p nh?t l?i lo?i ph�ng d?a theo s? ph�ng ng??i d�ng ?� ch?n v� l?u v� database.
-      +  N�t h?y ?? h?y c�c l?a ch?n t? combobox c?a kh�ch h�ng.
 
+2.2.13.	Màn hình chính:
 
-
-
-
-
-
-2.2.7. M�n h�nh qu?n l� nh�n vi�n:
-
-- M� t?:
-+ Hi?n th? to�n b? l?ch l�m vi?c c?a nh�n vi�n ?ang c� trong kh�ch s?n, bao g?m s? th? t?, t�n nh�n vi�n, ca tr?c, ng�y l�m  tr�n ?�,ng??i d�ng kh�ng ???c thay ??i th�ng tin g� tr�n m�n h�nh n�y. G�c tr�i m�n h�nh c� 2 n�t l� 2 ch?c n?ng: C?p nh?t th�ng tin nh�n vi�n, c?p nh?t l?ch l�m vi?c v� hi?n th? l?ch ?? ti?n cho vi?c quan s�t ng�y th�ng.
-
-
-2.2.8. M�n h�nh c?p nh?t th�ng tin nh�n vi�n:
-
-- M� t?:
-+ Hi?n th? th�ng tin to�n b? nh�n vi�n l�m vi?c trong kh�ch s?n bao g?m: s? th? t? v� t�n nh�n vi�n.
-+ C�c n�t v?i c�c ch?c n?ng nh? th�m nh�n vi�n, x�a nh�n vi�n, c?p nh?t l?i th�ng tin nh�n vi�n, t�m ki?m theo t�n nh�n vi�n, h?y t�m ki?m.
-+ Ng??i d�ng ch?n d�ng tr�n datagridview v� click v�o c�c n�t ?? thao t�c, m?i d�ng ng??i d�ng click tr�n picturebox hi?n th? h�nh theo t?ng nh�n vi�n, n?u nh�n vi�n kh�ng c� h�nh h? th?ng s? l?y h�nh m?c ??nh.
-2.2.9. M�n h�nh c?p nh?t l?ch l�m vi?c:
-
-
-
-- M� t?:
-+ Hi?n th? to�n b? l?ch l�m vi?c c?a nh�n vi�n tr�n datagirdview ?�ng th?i c� th�m c�c ch?c n?ng: th�m l?ch l�m vi?c, x�a l?ch l�m vi?c, c?p nh?t l?i l?ch l�m vi?c.
-+ Ng??i d�ng s? ch?n t? 3 combobox b�n tay ph?i m�n h�nh ?? th�m l?ch l�m vi?c cho nh�n vi�n
-+ Nh�n vi�n ch?a ???c th�m v�o co s? d? li?u s? kh�ng ???c th�m l?ch l�m vi?c.
-+ N�t xem l?i l?ch l�m vi?c ???c hi?n th? tr�n g�c tr�i tr�n c?a m�n h�nh ?? ng??i d�ng c� th? xem l?i ng�y l�m vi?c c?a nh�n vi�n theo l?a ch?n tr�n datetime picker.
-2.2.10. M�n h�nh qu?n l� kh�ch h�ng:
-
-
-- M� t?:
-+ Hi?n th? to�n b? kh�ch h�ng ?� check in t?i kh�ch s?n khi ?� c� h�a ??n thanh to�n.
-+ Bao g?m c�c n�t ch?c n?ng nh?: t�m ki?m kh�ch h�ng theo t�n kh�ch h�ng, l?c ra c�c kh�ch h�ng t? ng�y n�o ??n ng�y n�o.
-+ Ng??i d�ng kh�ng c� quy?n x�a hay th�m hay c?p nh?t g� t? m�n h�nh n�y, ng??i d�ng mu?n th�m kh�ch h�ng th� ch? ???c th�m khi ?� c� h�a ??n t? m�n h�nh chi ti?t h�a ??n.
-2.2.11. M�n h�nh li�n h?:
-
-- M� t?:
-+ Hi?n th? th�ng tin c?a nh� s�ng l?p ra ph?n m?m, ??a ch?, email. website li�n h?, s? ?i?n tho?i, n?m ph�t h�nh.
-
-2.2.12. M�n h�nh chi ti?t phi?u ph�ng:
-
-- M� t?:
-+ Hi?n th? c�c th�ng tin v? h�a ??n c?a kh�ch h�ng nh?: lo?i ph�ng, t�n booking, s? kh�ch, ng�y v�o,
-gi� ph�ng, s? ?�m, s? ph�ng, t�n kh�ch, qu?c t?ch, ng�y ?i, th�nh ti?n, t�n d?ch v?, gi� d?ch v?
-s? l??ng,t�n nh�n vi�n, ng�y c?a h�a ??n.
-+ Bao g?m c�c n�t v?i c�c ch?c n?ng nh?: th�m d?ch v?, x�a d?ch v?, l?u khi c� s?a ??i, in, v� xem l?i h�a ??n theo ng�y ??n tr�n datetime picker.
-+ Sau khi ng??i d�ng nh?n n�t l?u th�ng tin s? ???c l?u v�o b?ng kh�ch h�ng, h�a ??n, chi ti?t h�a ??n theo t?ng table trong c? s? d? li?u, ??ng th?i s? chuy?n v? m�n h�nh ch�nh v� hi?n th? l�n c�c label c?a ph�ng ?� th�ng tin ?� ???c ?i?n v�o v� tr?ng th�i ph�ng s? thay ??i t? tr?ng sang c� kh�ch.
-+ Khi ng??i d�ng nh?n n�t th�m, t�n d?ch v? ???c ch?n t? combobox v� s? l??ng ???c ?i?n t? textbox s? ???c insert xu?ng datagridview chi ti?t d?ch v? b�n d??i.
-+ Khi ng??i d�ng nh?n ch?n d�ng tr�n datagridview v� nh?n n�t x�a, th� d�ng dl ?� s? ???c x�a ?i tr�n datagridview ?�.
-   + T�n d?ch v? s? ???c load t? database ?? v� combobox.
-
-
-2.2.13. M�n h�nh ch�nh:
-
-
-- M� t?: Hi?n th? t?ng qu�t to�n b? c�c ch?ng n?ng c?a ph?n m?m bao g?m:
-+ Hi?n th? 8 ph�ng hi?n c� c?a kh�ch s?n: m?i ph�ng hi?n c�c th�ng tin nh? t�n booking, t�n kh�ch, s? kh�ch, qu?c t?ch, ng�y ??n, ng�y ?i, ti?n ph�ng, v� t�nh n?ng thay ??i tr?ng th�i ph�ng, 1 button chuy?n ??n trang chi ti?t ?? ?i?n th�ng tin h�a ??n, 1 n�t check out khi kh�ch tr? ph�ng.
-+ B�n tay tr�i m�n h�nh hi?n th? l?ch ti?n cho ng??i s? d?ng quan s�t ng�y th�ng n?m.
-+ D??i g�c tr�i hi?n th? c�c m�u theo tr?ng th�i ph�ng nh?: m�u ?? - ph�ng ?ang tr?ng, m�u xanh - ph�ng ?ang c� kh�ch, m�u v�ng - ph�ng kh�ch s? tr?, m�u x�m - ph�ng ?ang d?n d?p.
-+ G�c tr�n c?a m�n h�nh l� thanh menustrip bao g?m c�c ch?c n?ng t??ng ???ng link t?i c�c m�n h�nh c?a ch?c n?ng ?�: qu?n l� ph�ng, qu?n l� nh�n vi�n, qu?n l� kh�ch h�ng, th?ng k� v� li�n h?.
-
-
-
+ 
+-	Mô tả: Hiển thị tổng quát toàn bộ các chứng năng của phần mềm bao gồm:
++ Hiển thị 8 phòng hiện có của khách sạn: mỗi phòng hiển các thông tin như tên booking, tên khách, số khách, quốc tịch, ngày đến, ngày đi, tiền phòng, và tính năng thay đổi trạng thái phòng, 1 button chuyển đến trang chi tiết để điền thông tin hóa đơn, 1 nút check out khi khách trả phòng.
++ Bên tay trái màn hình hiển thị lịch tiện cho người sử dụng quan sát ngày tháng năm.
++ Dưới góc trái hiển thị các màu theo trạng thái phòng như: màu đỏ - phòng đang trống, màu xanh - phòng đang có khách, màu vàng - phòng khách sẽ trả, màu xám - phòng đang dọn dẹp.
++ Góc trên của màn hình là thanh menustrip bao gồm các chức năng tương đương link tới các màn hình của chức năng đó: quản lý phòng, quản lý nhân viên, quản lý khách hàng, thống kê và liên hệ.
